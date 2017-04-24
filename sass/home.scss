@@ -99,6 +99,29 @@
     }
   }
 
+  section.photos {
+    .css-masonry {
+      margin: 2rem auto;
+      width: 80%;
+      max-width: 1200px;
+      column-gap: .5em;
+      column-count: 4;
+
+      .item {
+        display: inline-block;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: .2em;
+
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+    }
+  }
+
   section.shows {
     table {
       // border: 1px solid #ccc;
