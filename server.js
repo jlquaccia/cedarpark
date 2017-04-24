@@ -14,7 +14,7 @@ var app = express();
 var db = process.env.LOCAL_DB_URL;
 var port = process.env.PORT || 3000;
 
-mongoose.connect(db);
+mongoose.connect(process.env.MONGODB_URI || db);
 
 app.use(bodyParser.json());
 app.use(bodyParser.json({type: 'application/vnd.api+json'}));
