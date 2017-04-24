@@ -9,6 +9,9 @@
               <a href="#band">Band</a>
             </li>
             <li>
+              <a href="#photos">Photos</a>
+            </li>
+            <li>
               <a href="#shows">Shows</a>
             </li>
             <li>
@@ -23,6 +26,12 @@
           <h4>Band</h4>
           <p>Four loko kitsch drinking vinegar, kale chips bespoke chillwave sustainable cronut PBR&amp;B air plant green juice lumbersexual. Master cleanse scenester meh, chartreuse ramps viral sartorial 8-bit blog dreamcatcher plaid pop-up salvia. Vegan kickstarter PBR&amp;B iPhone. Subway tile heirloom cray, normcore four dollar toast bicycle rights marfa knausgaard DIY man bun af wayfarers mustache synth. Activated charcoal live-edge edison bulb, fap beard chicharrones subway tile salvia vexillologist jean shorts. YOLO lomo man braid, polaroid 90's fingerstache kitsch flannel chartreuse pour-over pop-up dreamcatcher. PBR&amp;B coloring book lyft, wayfarers semiotics austin banh mi.</p>
         </section>
+        <sections id="photos" class="photos">
+          <h4>Photos</h4>
+          <div ng-repeat="image in cedarParkIG">
+            <img src="{{image.images.standard_resolution.url}}" alt="Cedar Park">
+          </div>
+        </sections>
         <section id="shows" class="shows">
           <h4>Shows</h4>
           <table>
