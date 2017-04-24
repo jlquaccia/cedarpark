@@ -15,8 +15,10 @@ module.exports = function (app) {
       if (error) res.json(error);
 
       if (response.statusCode === 200) {
-        // console.log(body);
+        console.log('ig status code: ' + response.statusCode);
         res.json(body);
+      } else {
+        console.log('ig status code: ', response.statusCode);
       }
     });
   });

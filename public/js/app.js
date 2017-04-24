@@ -1,2 +1,2 @@
 angular
-  .module('cedarpark', ['ui.router', 'ngSanitize']);
+  .module('cedarpark', ['ui.router']);
