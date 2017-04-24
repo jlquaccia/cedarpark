@@ -2,6 +2,7 @@
 require('dotenv').config();
 var express = require('express');
 var sassMiddleware = require('node-sass-middleware');
+var autoprefixer = require('express-autoprefixer');
 var path = require('path');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
@@ -26,6 +27,7 @@ app.use(sassMiddleware({
   outputStyle: 'compressed',
   prefix: '/css'
 }));
+app.use(autoprefixer({browsers: 'last 2 versions', cascade: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // routes ==================================================
