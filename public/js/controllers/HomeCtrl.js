@@ -32,7 +32,9 @@ angular
     $(document).ready(function () {
       (function() {
         // Initialize
-        var bLazy = new Blazy();
+        var bLazy = new Blazy({
+          src: 'data-blazy'
+        });
       })();
     });
   }]);
