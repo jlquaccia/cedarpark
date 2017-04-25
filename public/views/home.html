@@ -1,5 +1,5 @@
 <div id="home">
-  <img class="crumpledPaper" src="../images/backgrounds/crumpled-white-paper-8.jpg" alt="">
+  <img class="crumpledPaper" lazy-img="../images/backgrounds/crumpled-white-paper-8.jpg" alt="">
 
   <div class="container">
     <div class="row">
@@ -49,7 +49,7 @@
             <div ng-repeat="image in cedarParkIG">
               <div class="item">
                 <a href="{{image.link}}" target="_blank">
-                  <img src="{{image.images.standard_resolution.url}}" alt="Cedar Park">
+                  <img lazy-img="{{image.images.standard_resolution.url}}" alt="Cedar Park">
                 </a>
               </div>
             </div>

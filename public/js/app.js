@@ -1,2 +1,2 @@
 angular
-  .module('cedarpark', ['ui.router', 'duScroll']);
+  .module('cedarpark', ['ui.router', 'duScroll', 'angularLazyImg']);
