@@ -1,0 +1,39 @@
+@media screen and (max-width: 1100px) {
+  #home .crumpledPaper {
+    width: 1100px;
+  }
+
+  #home section.photos .css-masonry {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #home section.band p {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #home section.photos .css-masonry {
+    column-count: 2;
+  }
+
+  #home section.shows table {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #home header h1 {
+    font-size: 3em;
+  }
+
+  #home h4 {
+    font-size: 2em;
+  }
+
+  #home section.band p {
+    width: 80%;
+  }
+}
