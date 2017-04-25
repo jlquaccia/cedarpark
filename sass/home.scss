@@ -1,9 +1,26 @@
 #home {
+  .crumpledPaper {
+    background-size: contain;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    filter: opacity(50%);
+  }
+
+  // background-image: url("../images/backgrounds/crumpled-white-paper-8.jpg");
+  // background-size: contain;
+
   text-transform: uppercase;
   text-align: center;
 
+  .whiteBg {
+    background-color: #FFF;
+    position: relative;
+  }
+
   h4.ep {
     margin-bottom: 10px;
+    margin-top: 52.5px;
   }
 
   h4 {
@@ -25,7 +42,7 @@
     }
 
     img.blurryFace {
-      margin: 20px auto;
+      margin: 20px auto 62.5px;
       width: 25%
     }
 
@@ -88,7 +105,7 @@
   }
 
   section {
-    margin: 200px 0;
+    margin: 125px 0;
   }
 
   section.band {
@@ -228,6 +245,7 @@
             width: 20px;
             position: relative;
             top: -3px;
+            border-radius: 50%;
           }
 
           i {
