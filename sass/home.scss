@@ -160,10 +160,10 @@
   section.photos {
     .css-masonry {
       margin: 2rem auto;
-      width: 80%;
+      width: 285px;
       max-width: 1200px;
       column-gap: .5em;
-      column-count: 4;
+      column-count: 1;
 
       .item {
         display: inline-block;
@@ -246,6 +246,13 @@
   }
 
   section.contact {
+    a.email {
+      color: rgba(54,53,58,1);
+      text-decoration: none;
+      position: relative;
+      top: 50px;
+    }
+
     ul.social {
       padding: 0;
       list-style-type: none;
