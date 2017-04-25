@@ -28,4 +28,11 @@ angular
         scrollTop: 0
       }, 750);
     };
+
+    $(document).ready(function () {
+      (function() {
+        // Initialize
+        var bLazy = new Blazy();
+      })();
+    });
   }]);
