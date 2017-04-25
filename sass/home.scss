@@ -7,9 +7,6 @@
     filter: opacity(50%);
   }
 
-  // background-image: url("../images/backgrounds/crumpled-white-paper-8.jpg");
-  // background-size: contain;
-
   text-transform: uppercase;
   text-align: center;
 
@@ -58,8 +55,12 @@
         a {
           color: rgba(54,53,58,1);
 
-          &:hover {
+          &:hover,
+          &:active,
+          &:focus,
+          &:visited {
             text-decoration: none;
+            outline: none;
           }
 
           span {
