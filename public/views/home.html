@@ -49,10 +49,10 @@
         <section id="photos" class="photos">
           <h4>Photos</h4>
           <div class="css-masonry">
-            <div ng-repeat="image in cedarParkIG">
+            <div ng-repeat="image in cedarParkIG | limitTo: 4">
               <div class="item">
                 <a href="{{image.link}}" target="_blank">
-                  <img src="https://d13yacurqjgara.cloudfront.net/users/12755/screenshots/1037374/hex-loader2.gif" lazy-img="{{image.images.standard_resolution.url}}" alt="Cedar Park">
+                  <img src="{{image.images.standard_resolution.url}}" alt="Cedar Park">
                 </a>
               </div>
             </div>
