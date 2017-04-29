@@ -37,3 +37,9 @@
     width: 80%;
   }
 }
+
+@media screen and (max-width: 450px) {
+  #home header ul.navWrapper li {
+    margin: 0 5px;
+  }
+}
