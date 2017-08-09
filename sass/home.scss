@@ -1,4 +1,8 @@
 #home {
+  .home__ep-sub-header {
+    font-size: .6em;
+  }
+  
   .to-top {
     position: fixed;
     bottom: 0;
@@ -189,12 +193,22 @@
       width: 70%;
       table-layout: fixed;
       margin: 0 auto;
+
+
     }
 
     table tr {
       // background: #f8f8f8;
       border-bottom: 1px solid rgba(54,53,58,1);
       padding: .35em;
+    }
+
+    tr.shows__no-border-bottom {
+      border-bottom: none !important;
+
+      .shows__no-shows-desktop {
+        text-decoration: line-through;
+      }
     }
 
     table th,
@@ -225,6 +239,11 @@
       .mobile {
         display: block;
         text-align: left;
+
+        .shows__no-shows-mobile {
+          text-align: center;
+          text-decoration: line-through;
+        }
 
         .dateWrapper {
           display: inline-block;
