@@ -162,25 +162,13 @@
   }
 
   section#music {
-    .music__player,
-    .music__player-mobile {
-      border: 0;
-      width: 350px;
-      height: 588px;
+    .music__player {
+      width: 705px;
     }
 
-    .music__player-mobile {
-      display: none
-    }
-
-    @media screen and (max-width: 400px) {
-      .music__player-mobile {
-        width: 100%;
-        display: block;
-      }
-
+    @media screen and (max-width: 800px) {
       .music__player {
-        display: none
+        width: 100%;
       }
     }
   }
