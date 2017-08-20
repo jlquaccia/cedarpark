@@ -161,6 +161,20 @@
     }
   }
 
+  section#music {
+    .music__player {
+      border: 0;
+      width: 350px;
+      height: 588px;
+    }
+
+    @media screen and (max-width: 350px) {
+      .music__player {
+        width: 100%;
+      }
+    }
+  }
+
   section.photos {
     .css-masonry {
       margin: 2rem auto;
