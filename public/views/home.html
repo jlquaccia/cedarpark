@@ -11,6 +11,9 @@
               <a href="#band" du-smooth-scroll offset="30" duration="750"><span>Band</span></a>
             </li>
             <li>
+              <a href="#video" du-smooth-scroll offset="30" duration="750"><span>Video</span></a>
+            </li>
+            <li>
               <a href="#music" du-smooth-scroll offset="30" duration="750"><span>Music</span></a>
             </li>
             <li>
@@ -46,6 +49,13 @@
           </p>
         </section>
 
+        <section id="video" class="video">
+          <h4>Video</h4>
+          <div class="videoWrapper">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/0lCJROLtV34" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </section>
+
         <section id="music" class="band">
           <h4>Music</h4>
           <iframe class="music__player" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/345517474&amp;color=928b87&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
@@ -56,8 +66,8 @@
           <div class="css-masonry">
             <div ng-repeat="image in cedarParkIG | limitTo: 4">
               <div class="item">
-                <a href="{{image.link}}" target="_blank">
-                  <img src="{{image.images.standard_resolution.url}}" alt="Cedar Park">
+                <a href="https://www.instagram.com/cedarparkband">
+                  <img src="{{image.node.display_url}}" alt="Cedar Park">
                 </a>
               </div>
             </div>
@@ -66,8 +76,9 @@
 
         <section id="shows" class="shows">
           <h4>Shows</h4>
+          <p class="shows__description">Stay up to date with our upcoming shows through our social media</p>
           <!-- desktop -->
-          <table>
+          <!-- <table>
             <thead>
               <tr>
                 <th scope="col">Date</th>
@@ -75,7 +86,7 @@
                 <th style="width: 157px;" class="location" scope="col">Location</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody> -->
               <!-- <tr>
                 <td data-label="Date">July 21</td>
                 <td data-label="Venue">St. James Gate</td>
@@ -83,14 +94,14 @@
               </tr> -->
 
               <!-- no shows -->
-              <tr class="shows__no-border-bottom">
+          <!--     <tr class="shows__no-border-bottom">
                 <td data-label="Date" class="shows__no-shows-desktop">No Upcoming Dates</td>
               </tr>
             </tbody>
-          </table>
+          </table> -->
 
           <!-- mobile -->
-          <div class="mobile">
+          <!-- <div class="mobile"> -->
             <!-- <div class="dateWrapper">
               <div class="month">July</div>
               <div class="day">21</div>
@@ -103,8 +114,8 @@
             <br> -->
 
             <!-- no shows mobile -->
-            <div class="shows__no-shows-mobile">No Upcoming Dates</div>
-          </div>
+            <!-- <div class="shows__no-shows-mobile">No Upcoming Dates</div> -->
+          <!-- </div> -->
         </section>
       </div>
     </div>

@@ -6,7 +6,7 @@ angular
       .then(
         function (response) {
           response = JSON.parse(response.data);
-          $scope.cedarParkIG = response.items;
+          $scope.cedarParkIG = response.data.user.edge_owner_to_timeline_media.edges;
           console.log(response);
         }
       );

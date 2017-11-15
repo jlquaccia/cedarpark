@@ -11,7 +11,7 @@ module.exports = function (app) {
   });
 
   app.get('/api/cedar-park-ig', function (req, res) {
-    request('https://www.instagram.com/cedarparkband/media', function (error, response, body) {
+    request('https://www.instagram.com/graphql/query/?query_id=17888483320059182&variables={%22id%22:%223866511991%22,%22first%22:20,%22after%22:null}', function (error, response, body) {
       if (error) res.json(error);
 
       if (response.statusCode === 200) {

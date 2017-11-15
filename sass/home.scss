@@ -161,6 +161,21 @@
     }
   }
 
+  section.video {
+    // .videoWrapper {
+    //   position: relative;
+    //   padding-bottom: 56.25%; /* 16:9 */
+    //   padding-top: 25px;
+    //   height: 0;
+    // }
+    .videoWrapper iframe {
+      width: 100%;
+      height: 56.2vw;
+      max-width: 1000px;
+      max-height: 572px;
+    }
+  }
+
   section#music {
     .music__player {
       width: 705px;
@@ -241,6 +256,10 @@
 
     .mobile {
       display: none;
+    }
+
+    .shows__description {
+      font-weight: 200;
     }
 
     @media screen and (max-width: 600px) {
