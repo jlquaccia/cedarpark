@@ -1,0 +1,31 @@
+.lyrics {
+  .blurryFace {
+    width: 300px;
+    margin: 0 auto 50px;
+  }
+
+  &#home {
+    a {
+      color: #333;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .album-title {
+      margin-bottom: 0;
+    }
+
+    section.band p {
+      text-transform: initial;
+    }
+
+    .margin-top {
+      margin-top: 50px;
+    }
+  }
+
+  .album-link-wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}

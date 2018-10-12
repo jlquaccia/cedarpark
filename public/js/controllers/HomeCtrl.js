@@ -1,6 +1,6 @@
 angular
   .module('cedarpark')
-  .controller('HomeCtrl', ['$scope', '$http', '$document', function ($scope, $http, $document) {
+  .controller('HomeCtrl', ['$scope', '$http', '$document', '$state', '$stateParams', '$location', function ($scope, $http, $document, $state, $stateParams, $location) {
     // instagram
     $http.get('/api/cedar-park-ig')
       .then(
@@ -37,4 +37,11 @@ angular
         });
       })();
     });
+
+    if ($location.search().link) {
+      $('html, body').animate({
+        scrollTop: $("#"+$location.search().link).offset().top
+      }, 750);
+      window.history.replaceState({}, document.title, "/");
+    }
   }]);
