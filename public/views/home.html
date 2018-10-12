@@ -10,9 +10,9 @@
             <li>
               <a href="#band" du-smooth-scroll offset="30" duration="750"><span>Band</span></a>
             </li>
-            <li>
+            <!-- <li>
               <a href="#video" du-smooth-scroll offset="30" duration="750"><span>Video</span></a>
-            </li>
+            </li> -->
             <li>
               <a href="#music" du-smooth-scroll offset="30" duration="750"><span>Music</span></a>
             </li>
@@ -31,7 +31,11 @@
           </ul>
           <hr>
           <h4 class="ep"><span>Fake Matter<br> <span class="home__ep-sub-header"><i>OUT NOW</i></span></span></h4>
-          <img src="../images/fake-matter-min.JPG" class="img-responsive blurryFace" alt="Cedar Park">
+          <div class="spotify-link-wrapper">
+            <a href="spotify:artist:2dB2SJYShBsnVa3SvJ5aKQ">
+              <img src="../images/fake-matter-min.JPG" class="img-responsive blurryFace" alt="Cedar Park">
+            </a>
+          </div>
         </header>
       </div>
     </div>
@@ -52,16 +56,20 @@
           </p>
         </section>
 
-        <section id="video" class="video">
+        <!-- <section id="video" class="video">
           <h4>Video</h4>
           <div class="videoWrapper">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/0lCJROLtV34" frameborder="0" allowfullscreen></iframe>
           </div>
-        </section>
+        </section> -->
 
         <section id="music" class="band">
           <h4>Music</h4>
-          <iframe class="music__player" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/345517474&amp;color=928b87&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+          <!-- <iframe class="music__player" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/345517474&amp;color=928b87&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe> -->
+          <div class="spotify-player-wrappers">
+            <iframe src="https://open.spotify.com/embed/album/0FfZmW3MBADhC5kghPkoD0" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed/album/7FyVouWfQJyCgkTc7En9rM" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
         </section>
 
         <section id="photos" class="photos">

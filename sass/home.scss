@@ -2,7 +2,7 @@
   .home__ep-sub-header {
     font-size: .6em;
   }
-  
+
   .to-top {
     position: fixed;
     bottom: 0;
@@ -334,5 +334,16 @@
         }
       }
     }
+  }
+
+  .spotify-player-wrappers {
+    iframe {
+      margin: 10px 10px 0 0;
+    }
+  }
+
+  .spotify-link-wrapper {
+    width: 285px;
+    margin: 0 auto;
   }
 }

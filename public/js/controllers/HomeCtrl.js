@@ -2,14 +2,14 @@ angular
   .module('cedarpark')
   .controller('HomeCtrl', ['$scope', '$http', '$document', '$state', '$stateParams', '$location', function ($scope, $http, $document, $state, $stateParams, $location) {
     // instagram
-    $http.get('/api/cedar-park-ig')
-      .then(
-        function (response) {
-          response = JSON.parse(response.data);
-          $scope.cedarParkIG = response.data.user.edge_owner_to_timeline_media.edges;
-          console.log(response);
-        }
-      );
+    // $http.get('/api/cedar-park-ig')
+    //   .then(
+    //     function (response) {
+    //       response = JSON.parse(response.data);
+    //       $scope.cedarParkIG = response.data.user.edge_owner_to_timeline_media.edges;
+    //       console.log(response);
+    //     }
+    //   );
 
     // scroll events
     $(window).scroll(function () {
